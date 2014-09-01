@@ -4,11 +4,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle/MTLJSONAdapter.h>
 #import "VPRModel.h"
 
-@interface VPRUser : VPRModel
+@interface VPRUser : MTLModel <MTLJSONSerializing, VPRModel>
 
-@property(nonatomic, strong) NSString *url;
 @property(nonatomic, assign) NSString *username;
 /**
  *  A list of NSStrings* with links to snippets.

@@ -5,8 +5,6 @@
 
 #import "VPRWebAPIClient.h"
 #import "VPRHTTPConnector.h"
-#import "VPRSnippet.h"
-#import "VPRModel.h"
 
 @implementation VPRWebAPIClient
 

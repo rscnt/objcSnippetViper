@@ -3,13 +3,14 @@
 // Copyright (c) 2014 rscnt. All rights reserved.
 //
 
-#import "VPRModel.h"
 #import <Foundation/Foundation.h>
+#import <Mantle/MTLModel.h>
+#import <Mantle/MTLJSONAdapter.h>
+#import "VPRModel.h"
 
 
-@interface VPRSnippet : VPRModel
+@interface VPRSnippet : MTLModel <MTLJSONSerializing, VPRModel>
 
-@property(nonatomic, strong) NSString *url;
 @property(nonatomic, strong) NSString *highlight;
 @property(nonatomic, strong) NSString *owner;
 @property(nonatomic, strong) NSString *title;

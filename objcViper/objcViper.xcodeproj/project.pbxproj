@@ -22,7 +22,6 @@
 		67C3F6C86E9DA46D1C173C08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C3F05D673EA8EE83D1A5C0 /* CoreGraphics.framework */; };
 		67C3F73BB1CAF309AB530435 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C3FE9511879AB6B1CCE026 /* UIKit.framework */; };
 		67C3F7704AE6AD22B8B08F80 /* VPRHTTPConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C3F44CF83E61636DD2D184 /* VPRHTTPConnector.m */; };
-		67C3F7E2C055D3FB03F09334 /* VPRModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C3F66F6B0CBA21877B1304 /* VPRModel.m */; };
 		67C3F943377165B1AF162C52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C3F09A68E1EEB8423385EB /* Foundation.framework */; };
 		67C3F97C72FD13D9C65B511C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C3FB8372861D946C8C137D /* XCTest.framework */; };
 		67C3FD023715A1938E08C21B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C3F2ECD71D84B8C93E765B /* main.m */; };
@@ -60,8 +59,7 @@
 		67C3F2ECD71D84B8C93E765B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67C3F44CF83E61636DD2D184 /* VPRHTTPConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPRHTTPConnector.m; sourceTree = "<group>"; };
 		67C3F48A76675249C119377A /* VPRUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPRUser.m; sourceTree = "<group>"; };
-		67C3F50352F40B8F67EC9BF7 /* VPRModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPRModel.h; sourceTree = "<group>"; };
-		67C3F66F6B0CBA21877B1304 /* VPRModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPRModel.m; sourceTree = "<group>"; };
+		67C3F5A36685BDC412C54A95 /* VPRModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPRModel.h; sourceTree = "<group>"; };
 		67C3F69A10F349F60A9A370A /* VPRWebAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPRWebAPIClient.h; sourceTree = "<group>"; };
 		67C3F6F0D17B378635457C20 /* OBVIPERAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBVIPERAppDelegate.m; sourceTree = "<group>"; };
 		67C3F731958FA30FBEA2220F /* VPRWebAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPRWebAPIClient.m; sourceTree = "<group>"; };
@@ -136,8 +134,7 @@
 				67C3FE55E99D1667B9DD6977 /* VPRSnippet.h */,
 				67C3F48A76675249C119377A /* VPRUser.m */,
 				67C3FF5450F2B0D1D517F16E /* VPRUser.h */,
-				67C3F66F6B0CBA21877B1304 /* VPRModel.m */,
-				67C3F50352F40B8F67EC9BF7 /* VPRModel.h */,
+				67C3F5A36685BDC412C54A95 /* VPRModel.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -551,7 +548,6 @@
 				EC58594419B4E16F000E9D7F /* VPRAddSnippetInteractor.m in Sources */,
 				67C3F7704AE6AD22B8B08F80 /* VPRHTTPConnector.m in Sources */,
 				67C3FED6F4798ADFDA0C57B3 /* VPRWebAPIClient.m in Sources */,
-				67C3F7E2C055D3FB03F09334 /* VPRModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

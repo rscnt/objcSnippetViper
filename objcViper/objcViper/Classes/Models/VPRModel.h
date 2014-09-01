@@ -4,9 +4,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Mantle/MTLModel.h>
-#import <Mantle/MTLJSONAdapter.h>
 
+@protocol VPRModel <NSObject>
 
-@interface VPRModel : MTLModel <MTLJSONSerializing>
+@property(nonatomic, strong) NSString *url;
+
 @end
