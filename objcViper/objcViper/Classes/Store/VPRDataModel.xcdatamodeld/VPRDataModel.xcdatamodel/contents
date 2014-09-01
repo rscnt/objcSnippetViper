@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ManagedObject" representedClassName="VPRManagedObject" isAbstract="YES" syncable="YES">
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Snippet" representedClassName="VPRManagedSnippet" parentEntity="ManagedObject" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lineos" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="owner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="style" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="snippetHasUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="userHasSnippet" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="VPRManagedUser" parentEntity="ManagedObject" syncable="YES">
+        <attribute name="snippets" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userHasSnippet" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Snippet" inverseName="snippetHasUser" inverseEntity="Snippet" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Snippet" positionX="205" positionY="-70" width="128" height="148"/>
+        <element name="User" positionX="-308" positionY="-45" width="128" height="88"/>
+        <element name="ManagedObject" positionX="-47" positionY="-117" width="128" height="58"/>
+    </elements>
+</model>

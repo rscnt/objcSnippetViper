@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67C3F0CBAA60F9BF82FE8BFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C3F7966819252720922F5F /* Images.xcassets */; };
+		67C3F1050FB94360C1AE82AF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C3F8A0ACD63BEF848D0D68 /* CoreData.framework */; };
+		67C3F1A106358ED85890F835 /* OBVIPERAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C3F6F0D17B378635457C20 /* OBVIPERAppDelegate.m */; };
+		67C3F202F6255ECA32E426A6 /* VPRUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C3F48A76675249C119377A /* VPRUser.m */; };
+		67C3F2A54C831735C7619979 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67C3F8CCCA4BB2ED8ED485F2 /* InfoPlist.strings */; };
+		67C3F4CAB4C6EDA55754989A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C3F09A68E1EEB8423385EB /* Foundation.framework */; };
+		67C3F4D4A08BA5E53CF40E61 /* objcViper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67C3F2087F20BC72232208B7 /* objcViper.xcdatamodeld */; };
+		67C3F5036CCCB7A00C0B9BCA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67C3F7069B853D2607B8760F /* InfoPlist.strings */; };
+		67C3F59136076C09FD8EBC29 /* VPRSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C3FED0D06AF543324E2BB3 /* VPRSnippet.m */; };
+		67C3F5E2F8EFF9B0418D1F74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C3FE9511879AB6B1CCE026 /* UIKit.framework */; };
+		67C3F62E1781B11DC305B353 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C3F8A0ACD63BEF848D0D68 /* CoreData.framework */; };
+		67C3F6B00747801061F1EF63 /* objcViperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C3F80F36BC451C3FC2F5E4 /* objcViperTests.m */; };
+		67C3F6C86E9DA46D1C173C08 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C3F05D673EA8EE83D1A5C0 /* CoreGraphics.framework */; };
+		67C3F73BB1CAF309AB530435 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C3FE9511879AB6B1CCE026 /* UIKit.framework */; };
+		67C3F7704AE6AD22B8B08F80 /* VPRHTTPConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C3F44CF83E61636DD2D184 /* VPRHTTPConnector.m */; };
+		67C3F7E2C055D3FB03F09334 /* VPRModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C3F66F6B0CBA21877B1304 /* VPRModel.m */; };
+		67C3F943377165B1AF162C52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C3F09A68E1EEB8423385EB /* Foundation.framework */; };
+		67C3F97C72FD13D9C65B511C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C3FB8372861D946C8C137D /* XCTest.framework */; };
+		67C3FD023715A1938E08C21B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C3F2ECD71D84B8C93E765B /* main.m */; };
+		67C3FED6F4798ADFDA0C57B3 /* VPRWebAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C3F731958FA30FBEA2220F /* VPRWebAPIClient.m */; };
+		B37F674691364605935156CE /* libPods-objcViper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C82C13C222B41D0BBA454E9 /* libPods-objcViper.a */; };
+		EC58593119B4CDDB000E9D7F /* VPRAddDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58593019B4CDDB000E9D7F /* VPRAddDataManager.m */; };
+		EC58593719B4D85D000E9D7F /* VPRAddUserInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58593619B4D85D000E9D7F /* VPRAddUserInteractor.m */; };
+		EC58593E19B4DF25000E9D7F /* VPRAddSnippetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58593D19B4DF25000E9D7F /* VPRAddSnippetManager.m */; };
+		EC58594419B4E16F000E9D7F /* VPRAddSnippetInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58594319B4E16F000E9D7F /* VPRAddSnippetInteractor.m */; };
+		ECC3000219B10FC50073A8ED /* VPRManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC3000119B10FC50073A8ED /* VPRManagedObject.m */; };
+		ECC3000519B10FC50073A8ED /* VPRManagedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC3000419B10FC50073A8ED /* VPRManagedUser.m */; };
+		ECC3000A19B1149C0073A8ED /* VPRCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC3000919B1149C0073A8ED /* VPRCoreDataStore.m */; };
+		ECC3FFF019B0F67E0073A8ED /* VPRDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECC3FFEE19B0F67E0073A8ED /* VPRDataModel.xcdatamodeld */; };
+		ECC3FFFF19B10FC40073A8ED /* VPRManagedSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC3FFFE19B10FC40073A8ED /* VPRManagedSnippet.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67C3F396E1570DC09B0E48F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67C3F75F7CE1B45F8D67B82B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67C3FEBC591C680CA3CF0EDC;
+			remoteInfo = objcViper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A7BDE852C71461ABC02FB89 /* Pods-objcViper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-objcViper.xcconfig"; path = "Pods/Pods-objcViper.xcconfig"; sourceTree = "<group>"; };
+		67C3F05204B3B624CD44305A /* objcViper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objcViper-Prefix.pch"; sourceTree = "<group>"; };
+		67C3F05D673EA8EE83D1A5C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		67C3F09A68E1EEB8423385EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		67C3F13DC8C9A5997B7A5798 /* objcViper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = objcViper.xcdatamodel; sourceTree = "<group>"; };
+		67C3F2362D5E44ACD65D4C03 /* objcViper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "objcViper-Info.plist"; sourceTree = "<group>"; };
+		67C3F24C9E06E8F3FE1B7605 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		67C3F2ECD71D84B8C93E765B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		67C3F44CF83E61636DD2D184 /* VPRHTTPConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPRHTTPConnector.m; sourceTree = "<group>"; };
+		67C3F48A76675249C119377A /* VPRUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPRUser.m; sourceTree = "<group>"; };
+		67C3F50352F40B8F67EC9BF7 /* VPRModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPRModel.h; sourceTree = "<group>"; };
+		67C3F66F6B0CBA21877B1304 /* VPRModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPRModel.m; sourceTree = "<group>"; };
+		67C3F69A10F349F60A9A370A /* VPRWebAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPRWebAPIClient.h; sourceTree = "<group>"; };
+		67C3F6F0D17B378635457C20 /* OBVIPERAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBVIPERAppDelegate.m; sourceTree = "<group>"; };
+		67C3F731958FA30FBEA2220F /* VPRWebAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPRWebAPIClient.m; sourceTree = "<group>"; };
+		67C3F749DBB290C6DAC4F6A4 /* VPRHTTPConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPRHTTPConnector.h; sourceTree = "<group>"; };
+		67C3F7966819252720922F5F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		67C3F80F36BC451C3FC2F5E4 /* objcViperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objcViperTests.m; sourceTree = "<group>"; };
+		67C3F886D1BCD2D46CB21D5B /* CollectionResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionResponseDelegate.h; sourceTree = "<group>"; };
+		67C3F8A0ACD63BEF848D0D68 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		67C3F902CDFB2D961428E9EA /* OBVIPERAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBVIPERAppDelegate.h; sourceTree = "<group>"; };
+		67C3FB8372861D946C8C137D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		67C3FC0913A72AF2505A6850 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		67C3FC81A694A45108024A1D /* objcViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = objcViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C3FCB52E890536B8260127 /* ModelResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelResponseDelegate.h; sourceTree = "<group>"; };
+		67C3FCC476E0276B41F78788 /* objcViperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "objcViperTests-Info.plist"; sourceTree = "<group>"; };
+		67C3FCFBB1DBDC82508747E3 /* objcViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objcViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C3FE55E99D1667B9DD6977 /* VPRSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPRSnippet.h; sourceTree = "<group>"; };
+		67C3FE9511879AB6B1CCE026 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		67C3FED0D06AF543324E2BB3 /* VPRSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPRSnippet.m; sourceTree = "<group>"; };
+		67C3FEDDDDEA5070C17F99B6 /* ResponseHandlersDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseHandlersDefinition.h; sourceTree = "<group>"; };
+		67C3FF5450F2B0D1D517F16E /* VPRUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPRUser.h; sourceTree = "<group>"; };
+		6C82C13C222B41D0BBA454E9 /* libPods-objcViper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-objcViper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC58592F19B4CDDB000E9D7F /* VPRAddDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPRAddDataManager.h; path = Modules/Add/Users/VPRAddDataManager.h; sourceTree = "<group>"; };
+		EC58593019B4CDDB000E9D7F /* VPRAddDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPRAddDataManager.m; path = Modules/Add/Users/VPRAddDataManager.m; sourceTree = "<group>"; };
+		EC58593519B4D85D000E9D7F /* VPRAddUserInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPRAddUserInteractor.h; path = Modules/Add/Users/ApplicationLogic/Interactor/VPRAddUserInteractor.h; sourceTree = "<group>"; };
+		EC58593619B4D85D000E9D7F /* VPRAddUserInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPRAddUserInteractor.m; path = Modules/Add/Users/ApplicationLogic/Interactor/VPRAddUserInteractor.m; sourceTree = "<group>"; };
+		EC58593C19B4DF25000E9D7F /* VPRAddSnippetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPRAddSnippetManager.h; path = Modules/Add/Snippets/Manager/VPRAddSnippetManager.h; sourceTree = "<group>"; };
+		EC58593D19B4DF25000E9D7F /* VPRAddSnippetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPRAddSnippetManager.m; path = Modules/Add/Snippets/Manager/VPRAddSnippetManager.m; sourceTree = "<group>"; };
+		EC58594219B4E16F000E9D7F /* VPRAddSnippetInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPRAddSnippetInteractor.h; path = Modules/Add/Snippets/Interactor/VPRAddSnippetInteractor.h; sourceTree = "<group>"; };
+		EC58594319B4E16F000E9D7F /* VPRAddSnippetInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPRAddSnippetInteractor.m; path = Modules/Add/Snippets/Interactor/VPRAddSnippetInteractor.m; sourceTree = "<group>"; };
+		ECC3000019B10FC50073A8ED /* VPRManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPRManagedObject.h; path = Store/Entities/VPRManagedObject.h; sourceTree = "<group>"; };
+		ECC3000119B10FC50073A8ED /* VPRManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPRManagedObject.m; path = Store/Entities/VPRManagedObject.m; sourceTree = "<group>"; };
+		ECC3000319B10FC50073A8ED /* VPRManagedUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPRManagedUser.h; path = Store/Entities/VPRManagedUser.h; sourceTree = "<group>"; };
+		ECC3000419B10FC50073A8ED /* VPRManagedUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPRManagedUser.m; path = Store/Entities/VPRManagedUser.m; sourceTree = "<group>"; };
+		ECC3000819B1149C0073A8ED /* VPRCoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPRCoreDataStore.h; path = Store/VPRCoreDataStore.h; sourceTree = "<group>"; };
+		ECC3000919B1149C0073A8ED /* VPRCoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPRCoreDataStore.m; path = Store/VPRCoreDataStore.m; sourceTree = "<group>"; };
+		ECC3FFEF19B0F67E0073A8ED /* VPRDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VPRDataModel.xcdatamodel; sourceTree = "<group>"; };
+		ECC3FFFD19B10FC40073A8ED /* VPRManagedSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VPRManagedSnippet.h; path = Store/Entities/VPRManagedSnippet.h; sourceTree = "<group>"; };
+		ECC3FFFE19B10FC40073A8ED /* VPRManagedSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VPRManagedSnippet.m; path = Store/Entities/VPRManagedSnippet.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67C3F2BC6420A31563419FE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C3F4CAB4C6EDA55754989A /* Foundation.framework in Frameworks */,
+				67C3F6C86E9DA46D1C173C08 /* CoreGraphics.framework in Frameworks */,
+				67C3F5E2F8EFF9B0418D1F74 /* UIKit.framework in Frameworks */,
+				67C3F1050FB94360C1AE82AF /* CoreData.framework in Frameworks */,
+				B37F674691364605935156CE /* libPods-objcViper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C3F827C1CF0D526ED57A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C3F97C72FD13D9C65B511C /* XCTest.framework in Frameworks */,
+				67C3F943377165B1AF162C52 /* Foundation.framework in Frameworks */,
+				67C3F73BB1CAF309AB530435 /* UIKit.framework in Frameworks */,
+				67C3F62E1781B11DC305B353 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67C3F0A6875D2BB7DBE4EB02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67C3FED0D06AF543324E2BB3 /* VPRSnippet.m */,
+				67C3FE55E99D1667B9DD6977 /* VPRSnippet.h */,
+				67C3F48A76675249C119377A /* VPRUser.m */,
+				67C3FF5450F2B0D1D517F16E /* VPRUser.h */,
+				67C3F66F6B0CBA21877B1304 /* VPRModel.m */,
+				67C3F50352F40B8F67EC9BF7 /* VPRModel.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67C3F17CF7A5539DFD30225B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				67C3F980376934BDED12F8E2 /* Client */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		67C3F80C449A4C412134DFAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67C3F2362D5E44ACD65D4C03 /* objcViper-Info.plist */,
+				67C3F7069B853D2607B8760F /* InfoPlist.strings */,
+				67C3F2ECD71D84B8C93E765B /* main.m */,
+				67C3F05204B3B624CD44305A /* objcViper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67C3F8A331910E8154D8533E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EC58592819B4CC49000E9D7F /* Modules */,
+				EC58592719B4CC3B000E9D7F /* Common */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		67C3F909B84333CA1AB22B46 /* objcViperTests */ = {
+			isa = PBXGroup;
+			children = (
+				67C3F91F1C693B73B1995E8E /* Supporting Files */,
+				67C3F80F36BC451C3FC2F5E4 /* objcViperTests.m */,
+			);
+			path = objcViperTests;
+			sourceTree = "<group>";
+		};
+		67C3F91F1C693B73B1995E8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67C3FCC476E0276B41F78788 /* objcViperTests-Info.plist */,
+				67C3F8CCCA4BB2ED8ED485F2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67C3F96845640B7F290B2878 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67C3F09A68E1EEB8423385EB /* Foundation.framework */,
+				67C3F05D673EA8EE83D1A5C0 /* CoreGraphics.framework */,
+				67C3FE9511879AB6B1CCE026 /* UIKit.framework */,
+				67C3F8A0ACD63BEF848D0D68 /* CoreData.framework */,
+				67C3FB8372861D946C8C137D /* XCTest.framework */,
+				6C82C13C222B41D0BBA454E9 /* libPods-objcViper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67C3F980376934BDED12F8E2 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				67C3F44CF83E61636DD2D184 /* VPRHTTPConnector.m */,
+				67C3F749DBB290C6DAC4F6A4 /* VPRHTTPConnector.h */,
+				67C3F731958FA30FBEA2220F /* VPRWebAPIClient.m */,
+				67C3F69A10F349F60A9A370A /* VPRWebAPIClient.h */,
+				67C3F886D1BCD2D46CB21D5B /* CollectionResponseDelegate.h */,
+				67C3FEDDDDEA5070C17F99B6 /* ResponseHandlersDefinition.h */,
+				67C3FCB52E890536B8260127 /* ModelResponseDelegate.h */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		67C3FD7B36D7FE116AEE4097 /* objcViper */ = {
+			isa = PBXGroup;
+			children = (
+				67C3F80C449A4C412134DFAB /* Supporting Files */,
+				67C3F902CDFB2D961428E9EA /* OBVIPERAppDelegate.h */,
+				67C3F6F0D17B378635457C20 /* OBVIPERAppDelegate.m */,
+				67C3F2087F20BC72232208B7 /* objcViper.xcdatamodeld */,
+				67C3F8A331910E8154D8533E /* Classes */,
+				67C3FEB769CEBB6FAEE66560 /* Resources */,
+			);
+			path = objcViper;
+			sourceTree = "<group>";
+		};
+		67C3FEB769CEBB6FAEE66560 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67C3F7966819252720922F5F /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		67C3FEEB62F93E9889A7FC8E = {
+			isa = PBXGroup;
+			children = (
+				67C3FF628DC3476E393A23DD /* Products */,
+				67C3F96845640B7F290B2878 /* Frameworks */,
+				67C3FD7B36D7FE116AEE4097 /* objcViper */,
+				67C3F909B84333CA1AB22B46 /* objcViperTests */,
+				2A7BDE852C71461ABC02FB89 /* Pods-objcViper.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		67C3FF628DC3476E393A23DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67C3FCFBB1DBDC82508747E3 /* objcViper.app */,
+				67C3FC81A694A45108024A1D /* objcViperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC58592719B4CC3B000E9D7F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ECF4F48A19B0D0F200A4210A /* Store */,
+				67C3F0A6875D2BB7DBE4EB02 /* Models */,
+				67C3F17CF7A5539DFD30225B /* Network */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		EC58592819B4CC49000E9D7F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EC58592C19B4CC89000E9D7F /* List */,
+				EC58592919B4CC56000E9D7F /* Add */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		EC58592919B4CC56000E9D7F /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				EC58592B19B4CC84000E9D7F /* Users */,
+				EC58592A19B4CC7F000E9D7F /* Snippets */,
+			);
+			name = Add;
+			sourceTree = "<group>";
+		};
+		EC58592A19B4CC7F000E9D7F /* Snippets */ = {
+			isa = PBXGroup;
+			children = (
+				EC58593919B4DEF4000E9D7F /* ApplicationLogic */,
+			);
+			name = Snippets;
+			sourceTree = "<group>";
+		};
+		EC58592B19B4CC84000E9D7F /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				EC58593219B4D80D000E9D7F /* ApplicationLogic */,
+			);
+			name = Users;
+			sourceTree = "<group>";
+		};
+		EC58592C19B4CC89000E9D7F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				EC58592E19B4CC93000E9D7F /* Snippets */,
+				EC58592D19B4CC8E000E9D7F /* Users */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		EC58592D19B4CC8E000E9D7F /* Users */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Users;
+			sourceTree = "<group>";
+		};
+		EC58592E19B4CC93000E9D7F /* Snippets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Snippets;
+			sourceTree = "<group>";
+		};
+		EC58593219B4D80D000E9D7F /* ApplicationLogic */ = {
+			isa = PBXGroup;
+			children = (
+				EC58593319B4D816000E9D7F /* Interactor */,
+				EC58593419B4D821000E9D7F /* Manager */,
+			);
+			name = ApplicationLogic;
+			sourceTree = "<group>";
+		};
+		EC58593319B4D816000E9D7F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EC58593519B4D85D000E9D7F /* VPRAddUserInteractor.h */,
+				EC58593619B4D85D000E9D7F /* VPRAddUserInteractor.m */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		EC58593419B4D821000E9D7F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EC58592F19B4CDDB000E9D7F /* VPRAddDataManager.h */,
+				EC58593019B4CDDB000E9D7F /* VPRAddDataManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		EC58593919B4DEF4000E9D7F /* ApplicationLogic */ = {
+			isa = PBXGroup;
+			children = (
+				EC58593B19B4DEFF000E9D7F /* Interactor */,
+				EC58593A19B4DEFB000E9D7F /* Manager */,
+			);
+			name = ApplicationLogic;
+			sourceTree = "<group>";
+		};
+		EC58593A19B4DEFB000E9D7F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EC58593C19B4DF25000E9D7F /* VPRAddSnippetManager.h */,
+				EC58593D19B4DF25000E9D7F /* VPRAddSnippetManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		EC58593B19B4DEFF000E9D7F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EC58594219B4E16F000E9D7F /* VPRAddSnippetInteractor.h */,
+				EC58594319B4E16F000E9D7F /* VPRAddSnippetInteractor.m */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		ECF4F48A19B0D0F200A4210A /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				ECF4F48B19B0D0FE00A4210A /* Entities */,
+				ECC3FFEE19B0F67E0073A8ED /* VPRDataModel.xcdatamodeld */,
+				ECC3000819B1149C0073A8ED /* VPRCoreDataStore.h */,
+				ECC3000919B1149C0073A8ED /* VPRCoreDataStore.m */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		ECF4F48B19B0D0FE00A4210A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				ECC3000019B10FC50073A8ED /* VPRManagedObject.h */,
+				ECC3000119B10FC50073A8ED /* VPRManagedObject.m */,
+				ECC3000319B10FC50073A8ED /* VPRManagedUser.h */,
+				ECC3000419B10FC50073A8ED /* VPRManagedUser.m */,
+				ECC3FFFD19B10FC40073A8ED /* VPRManagedSnippet.h */,
+				ECC3FFFE19B10FC40073A8ED /* VPRManagedSnippet.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67C3F7298FEAB81151FA82DC /* objcViperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67C3FD2847C93AE1F3DEE0D6 /* Build configuration list for PBXNativeTarget "objcViperTests" */;
+			buildPhases = (
+				67C3F1FB3308448A2E29F41E /* Sources */,
+				67C3F827C1CF0D526ED57A27 /* Frameworks */,
+				67C3F3ACE24915E7312FCD51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67C3F7E8259735C9E9A32AAA /* PBXTargetDependency */,
+			);
+			name = objcViperTests;
+			productName = objcViperTests;
+			productReference = 67C3FC81A694A45108024A1D /* objcViperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		67C3FEBC591C680CA3CF0EDC /* objcViper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67C3FDA8BAFD4707A44FC690 /* Build configuration list for PBXNativeTarget "objcViper" */;
+			buildPhases = (
+				B1CB1876BDD34AD5B600F34C /* Check Pods Manifest.lock */,
+				67C3FD04CB2C7A2FD5C9F7A5 /* Sources */,
+				67C3F2BC6420A31563419FE5 /* Frameworks */,
+				67C3FD5505454E934041042B /* Resources */,
+				42683154199441069F778BE6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = objcViper;
+			productName = objcViper;
+			productReference = 67C3FCFBB1DBDC82508747E3 /* objcViper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67C3F75F7CE1B45F8D67B82B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = rscnt;
+			};
+			buildConfigurationList = 67C3FA1F48A80CF074FFF95B /* Build configuration list for PBXProject "objcViper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 67C3FEEB62F93E9889A7FC8E;
+			productRefGroup = 67C3FF628DC3476E393A23DD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+			);
+			projectRoot = "";
+			targets = (
+				67C3FEBC591C680CA3CF0EDC /* objcViper */,
+				67C3F7298FEAB81151FA82DC /* objcViperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67C3F3ACE24915E7312FCD51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C3F2A54C831735C7619979 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C3FD5505454E934041042B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C3F5036CCCB7A00C0B9BCA /* InfoPlist.strings in Resources */,
+				67C3F0CBAA60F9BF82FE8BFB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42683154199441069F778BE6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-objcViper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1CB1876BDD34AD5B600F34C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67C3F1FB3308448A2E29F41E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C3F6B00747801061F1EF63 /* objcViperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67C3FD04CB2C7A2FD5C9F7A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C3FD023715A1938E08C21B /* main.m in Sources */,
+				ECC3000219B10FC50073A8ED /* VPRManagedObject.m in Sources */,
+				67C3F1A106358ED85890F835 /* OBVIPERAppDelegate.m in Sources */,
+				EC58593719B4D85D000E9D7F /* VPRAddUserInteractor.m in Sources */,
+				67C3F4D4A08BA5E53CF40E61 /* objcViper.xcdatamodeld in Sources */,
+				ECC3FFF019B0F67E0073A8ED /* VPRDataModel.xcdatamodeld in Sources */,
+				EC58593E19B4DF25000E9D7F /* VPRAddSnippetManager.m in Sources */,
+				67C3F59136076C09FD8EBC29 /* VPRSnippet.m in Sources */,
+				EC58593119B4CDDB000E9D7F /* VPRAddDataManager.m in Sources */,
+				67C3F202F6255ECA32E426A6 /* VPRUser.m in Sources */,
+				ECC3000A19B1149C0073A8ED /* VPRCoreDataStore.m in Sources */,
+				ECC3000519B10FC50073A8ED /* VPRManagedUser.m in Sources */,
+				ECC3FFFF19B10FC40073A8ED /* VPRManagedSnippet.m in Sources */,
+				EC58594419B4E16F000E9D7F /* VPRAddSnippetInteractor.m in Sources */,
+				67C3F7704AE6AD22B8B08F80 /* VPRHTTPConnector.m in Sources */,
+				67C3FED6F4798ADFDA0C57B3 /* VPRWebAPIClient.m in Sources */,
+				67C3F7E2C055D3FB03F09334 /* VPRModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67C3F7E8259735C9E9A32AAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67C3FEBC591C680CA3CF0EDC /* objcViper */;
+			targetProxy = 67C3F396E1570DC09B0E48F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		67C3F7069B853D2607B8760F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67C3F24C9E06E8F3FE1B7605 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		67C3F8CCCA4BB2ED8ED485F2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67C3FC0913A72AF2505A6850 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67C3F0B10DFAB4CCE24AAF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A7BDE852C71461ABC02FB89 /* Pods-objcViper.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "objcViper/objcViper-Prefix.pch";
+				INFOPLIST_FILE = "objcViper/objcViper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		67C3F1E6C16799A7BCE368DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "objcViper/objcViper-Prefix.pch";
+				INFOPLIST_FILE = "objcViperTests/objcViperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		67C3F6AAC1D591DE2F0E1A46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "objcViper/objcViper-Prefix.pch";
+				INFOPLIST_FILE = "objcViperTests/objcViperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		67C3F799E2981048480B56A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67C3FAC83F3A5A31F0B3E2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A7BDE852C71461ABC02FB89 /* Pods-objcViper.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "objcViper/objcViper-Prefix.pch";
+				INFOPLIST_FILE = "objcViper/objcViper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		67C3FC596B426CE7EAA4B3D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67C3FA1F48A80CF074FFF95B /* Build configuration list for PBXProject "objcViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C3FC596B426CE7EAA4B3D9 /* Debug */,
+				67C3F799E2981048480B56A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67C3FD2847C93AE1F3DEE0D6 /* Build configuration list for PBXNativeTarget "objcViperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C3F1E6C16799A7BCE368DF /* Debug */,
+				67C3F6AAC1D591DE2F0E1A46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67C3FDA8BAFD4707A44FC690 /* Build configuration list for PBXNativeTarget "objcViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67C3FAC83F3A5A31F0B3E2AE /* Debug */,
+				67C3F0B10DFAB4CCE24AAF59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		67C3F2087F20BC72232208B7 /* objcViper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				67C3F13DC8C9A5997B7A5798 /* objcViper.xcdatamodel */,
+			);
+			currentVersion = 67C3F13DC8C9A5997B7A5798 /* objcViper.xcdatamodel */;
+			path = objcViper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		ECC3FFEE19B0F67E0073A8ED /* VPRDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECC3FFEF19B0F67E0073A8ED /* VPRDataModel.xcdatamodel */,
+			);
+			currentVersion = ECC3FFEF19B0F67E0073A8ED /* VPRDataModel.xcdatamodel */;
+			name = VPRDataModel.xcdatamodeld;
+			path = Store/VPRDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 67C3F75F7CE1B45F8D67B82B /* Project object */;
+}
