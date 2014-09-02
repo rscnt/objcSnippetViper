@@ -28,24 +28,24 @@ static const NSString* kAPIEndPointForSnippets = @"/snippets/";
 * */
 - (void)fetchCollectionFromUrl:(NSString *)url
    withDictionaryOfParamenters:(NSDictionary *)parameters
-           toCollectionHandler:(CollectionResponseHanlder)collectionResponseHandler
-             andErrorHanlder:(ErrorResponseHanlder)errorResponseHandler;
+           toCollectionHandler:(CollectionResponseHandler)collectionResponseHandler
+             andErrorHanlder:(ErrorResponseHandler)errorResponseHandler;
 
 /**
 * Fetch collection of users.
 */
 - (void) fetchUserCollectionWithParameters:(NSDictionary *)parameters
-                       toCollectionHanlder:(CollectionResponseHanlder)collectionResponseHandler
-                           andErrorHanlder:(ErrorResponseHanlder)errorResponseHandler;
+                       toCollectionHanlder:(CollectionResponseHandler)collectionResponseHandler
+                           andErrorHanlder:(ErrorResponseHandler)errorResponseHandler;
 
 /**
 * Fetch collection of snippets.
 * */
 - (void) fetchSnippetCollectionWithParameters:(NSDictionary *)parameters
-                          toCollectionHandler:(CollectionResponseHanlder)collectionResponseHandler
-                              andErrorHandler:(ErrorResponseHanlder)errorResponseHandler;
+                          toCollectionHandler:(CollectionResponseHandler)collectionResponseHandler
+                              andErrorHandler:(ErrorResponseHandler)errorResponseHandler;
 
 
--(void) publishModelToTheServer:(VPRModel *)model andModelResponseHanlder:(ModelResponseHanlder)modelResponseHanlder;
+-(void) publishModelToTheServer:(VPRModel *)model andModelResponseHanlder:(ModelResponseHandler)modelResponseHanlder;
 
 @end

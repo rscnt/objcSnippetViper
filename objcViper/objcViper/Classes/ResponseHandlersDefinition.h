@@ -14,7 +14,7 @@
 * This block returns nothing, but receives an
 * id<CollectionResponseDelegate> object, coming from a response.
 * */
-typedef void (^CollectionResponseHanlder)(id<CollectionResponseDelegate>);
-typedef void (^ErrorResponseHanlder)(id);
-typedef void (^ModelResponseHanlder)(VPRModel *);
+typedef void (^CollectionResponseHandler)(id<CollectionResponseDelegate>);
+typedef void (^ErrorResponseHandler)(id);
+typedef void (^ModelResponseHandler)(VPRModel *);
 @end

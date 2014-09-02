@@ -4,12 +4,11 @@ platform :ios, "7.0"
 target "objcViper" do
        pod "AFNetworking", "~> 2.0"
        pod "Mantle"
-       pod 'Specta',      '~> 0.2.1'	
-       pod 'Expecta',     '~> 0.2.3'   # expecta matchers
-       pod 'OCMock',      '~> 2.2.1'   # OCMock
 end 
 
 target "objcViperTests" do
-
+       pod 'Specta',      '~> 0.2.1'	
+       pod 'Expecta',     '~> 0.2.3'   # expecta matchers
+       pod 'OCMock',      '~> 2.2.1'   # OCMock
 end
 

@@ -17,8 +17,8 @@
 
 - (void)fetchCollectionFromUrl:(NSString *)url
    withDictionaryOfParamenters:(NSDictionary *)parameters
-           toCollectionHandler:(CollectionResponseHanlder)collectionResponseHandler
-             andErrorHanlder:(ErrorResponseHanlder)errorResponseHandler
+           toCollectionHandler:(CollectionResponseHandler)collectionResponseHandler
+             andErrorHanlder:(ErrorResponseHandler)errorResponseHandler
 {
     [[VPRHTTPConnector sharedClient] GET:url parameters:parameters
                                  success:^(NSURLSessionDataTask *task, id responseObject) {
@@ -43,8 +43,8 @@
 }
 
 - (void)fetchUserCollectionWithParameters:(NSDictionary *)parameters
-                      toCollectionHanlder:(CollectionResponseHanlder)collectionResponseHandler
-                          andErrorHanlder:(ErrorResponseHanlder)errorResponseHandler
+                      toCollectionHanlder:(CollectionResponseHandler)collectionResponseHandler
+                          andErrorHanlder:(ErrorResponseHandler)errorResponseHandler
 {
     [self fetchCollectionFromUrl:kAPIEndPointForUsers
      withDictionaryOfParamenters:parameters
@@ -53,8 +53,8 @@
 }
 
 - (void)fetchSnippetCollectionWithParameters:(NSDictionary *)parameters
-                      toCollectionHanlder:(CollectionResponseHanlder)collectionResponseHandler
-                          andErrorHanlder:(ErrorResponseHanlder)errorResponseHandler
+                      toCollectionHanlder:(CollectionResponseHandler)collectionResponseHandler
+                          andErrorHanlder:(ErrorResponseHandler)errorResponseHandler
 {
     [self fetchCollectionFromUrl:kAPIEndPointForSnippets
      withDictionaryOfParamenters:parameters
